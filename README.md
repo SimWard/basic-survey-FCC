@@ -1,4 +1,4 @@
-# basic-tribute-page-fcc
+# basic-survey-fcc
 
 This was the second project for Free Code Camp, again with only CSS and HTML required, also only required 1-2 hours.
 
