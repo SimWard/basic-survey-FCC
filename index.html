@@ -1,0 +1,83 @@
+  <html>
+    <head>
+    <title>Survey Form</title>
+      <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+      <link rel="stylesheet" type="text/css" href="index.css"/>
+      <!---->
+    </head>
+    <body>
+      <h1 id="title">COVID-19 Survey Form</h1>
+      <p id="description">Thanks for sharing your isolation experience</p>
+      <form id="survey-form">
+        <div class="form-section">
+          <label id="name-label" for="name">Name</label>
+          <input id="name" class="required-form-section" type="text" placeholder="Jane Doe" required>
+        </div>
+        <div class="form-section">
+          <label id="email-label" for="email">Email</label>
+          <input id="email" class="required-form-section" type="email" placeholder="janedoe@example.com" required>
+        </div>
+        <div class="form-section">
+          <label id="number-label" for="number">How many people (including yourself) live at your residence?</label>
+          <input id="number" type="number" placeholder="Don't include pets" min="0" max="20">
+        </div>
+        <div class="form-section">
+          <label id="dropdown-label" for="dropdown">What age bracket are you in?</label>
+          <select id="dropdown" type="dropdown">
+            <option value="null">Please select</option>
+            <option value="13-18">13-18</option>
+            <option value="19-25">19-25</option>
+            <option value="26-35">26-35</option>
+            <option value="36-45">36-45</option>
+            <option value="46-55">46-55</option>
+            <option value="56+">56+</option>
+          </select>
+        </div>
+        <div class="form-section">
+          <label id="radio-label" for="covid-compliance">How compliant have been with the government restrictions?</label>
+          <label for="extremely-compliant-radio" class="response">
+            <input id="extremely-compliant-radio" value="extremely-compliant" type="radio" name="covid-compliance">
+            Extremely compliant
+          </label>
+          <label for="somewhat-compliant-radio" class="response">
+            <input id="somewhat-compliant-radio" value="somewhat-compliant" type="radio" name="covid-compliance">
+            Somewhat compliant
+          </label>
+          <label for="minimally-compliant-radio" class="response">
+            <input id="minimally-compliant-radio" value="minimally-compliant" type="radio" name="covid-compliance">
+            Minimally compliant
+          </label>
+          <label for="not-compliant-radio" class="response">
+            <input id="not-compliant-radio" value="not-compliant" type="radio" name="covid-compliance">
+            Not compliant at all
+          </label>
+        </div>
+        <div class="form-section">
+          <label id="checkbox-label" for="activities">What activities have you done more of since isolation?</label>
+          <label for="reading-checkbox" class="response">
+            <input id="reading-checkbox" value="reading" type="checkbox" name="activities">
+            Reading
+          </label>
+          <label for="gaming-checkbox" class="response">
+            <input id="gaming-checkbox" value="gaming" type="checkbox" name="activities">
+            Gaming
+          </label>
+          <label for="programming-checkbox" class="response">
+            <input id="programming-checkbox" value="programming" type="checkbox" name="activities">
+            Programming
+          </label>
+          <label for="pot-making-checkbox" class="response">
+            <input id="pot-making-checkbox" class="response" value="pot-making" type="checkbox" name="activities">
+            Pot Making
+          </label>
+        </div>
+        <div class="form-section">
+          <label id="textarea-label" for="textarea">Do you have any additional comments?</label>
+          <textarea id="textarea" type="textarea" rows="4">
+          </textarea>
+        </div>
+        <div class="form-section">
+          <button id="submit" type="submit">Submit</button>
+        </div>
+      </form>
+    </body>
